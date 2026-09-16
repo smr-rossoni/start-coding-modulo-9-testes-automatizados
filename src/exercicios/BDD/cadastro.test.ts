@@ -75,7 +75,7 @@ describe('function -> cadastrarCliente', () => {
         })
     })
 
-    it.only('deve retornar erro da API', async () => {
+    it('deve retornar erro da API', async () => {
         //Arrange
          const responseMock = responseFactory({
             cep: '11111-221',
