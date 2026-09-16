@@ -92,6 +92,6 @@ describe('function -> cadastrarCliente', () => {
         };
 
         // Act & Assert
-        await expect(cadastrarCliente(cliente)).rejects.toThrow('CEP não encontrado')
+        await expect(cadastrarCliente(cliente)).rejects.toThrow('Não foi possível consultar o CEP agora, tente novamente')
     })
 })
