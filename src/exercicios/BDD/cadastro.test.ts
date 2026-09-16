@@ -91,6 +91,10 @@ describe('function -> cadastrarCliente', () => {
             cep: '11111221'
         };
 
-       
+        // Act
+        const result = await cadastrarCliente(cliente)
+
+        // Assert
+        expect(result).toStrictEqual({ erro: 'CEP não encontrado' })
     })
 })
